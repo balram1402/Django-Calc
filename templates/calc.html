@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html>
+<head>
+	<style>
+		.all{
+			display:block;
+			grid-template-columns: auto auto auto auto;
+			border:2px solid grey;
+			margin:20px;
+
+		}
+		
+		</style>
+	</head>
+<body>
+
+
+<div class = "all">
+	<h2> Addition </h2>
+	
+	<form action = "adds">
+		{% csrf_token %}<br>
+	<input type = "text" name = "text1" placeholder = "enter no."><br>
+	<input type = "text" name = "text2" placeholder = "enter no."><br>
+	<input type = "submit">
+	</form>
+
+	</div>
+
+	<div class = "all">
+	<h2> Subtraction </h2>
+	
+	<form action = "sub">
+		{% csrf_token %}<br>
+	<input type = "text" name = "text1s" placeholder = "enter no."><br>
+	<input type = "text" name = "text2s" placeholder = "enter no."><br>
+	<input type = "submit">
+	</form>
+
+	</div>
+
+
+	<div class = "all">
+	<h2> Multiplication </h2>
+	
+	<form action = "mul">
+		{% csrf_token %}<br>
+	<input type = "text" name = "text1m" placeholder = "enter no."><br>
+	<input type = "text" name = "text2m" placeholder = "enter no."><br>
+	<input type = "submit">
+	</form>
+
+	</div>
+	<div class = "all">
+	<h2>Division </h2>
+	
+	<form action = "div" >
+		{% csrf_token %}<br>
+	<input type = "text" name = "text1d" placeholder = "enter no."><br>
+	<input type = "text" name = "text2d" placeholder = "enter no."><br>
+	<input type = "submit">
+	</form>
+
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
